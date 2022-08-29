@@ -122,7 +122,7 @@ ws.onopen = function () {
 
 setInterval(function () {
   ws.send(encode("", 2));
-}, 30000);
+}, 20000);
 
 ws.onmessage = async function (msgEvent) {
   const packet = await decode(msgEvent.data);
